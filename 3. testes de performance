@@ -183,3 +183,8 @@ int main() {
     }
     return 0;
 }
+
+Explicando o código:
+Cada algoritmo de ordenação foi implementado como uma função separada;
+Função measureExecutionTime: recebe como parâmetro um ponteiro para a função de ordenação, cria uma cópia do array para evitar interferência nos testes e além disso, mede o tempo de execução usando clock() da biblioteca time.h;
+Loop de Teste: Para cada tamanho de entrada (100, 1.000, 10.000, 50.000 e 100.000 elementos), o programa cria um array aleatório e testa cada algoritmo de ordenação, exibindo o tempo de execução para cada um.
